@@ -10,7 +10,7 @@ module Wisepdf
         alias_method :render_to_string_without_wisepdf, :render_to_string
         alias_method :render_to_string, :render_to_string_with_wisepdf
 
-        after_filter :clean_temp_files
+        after_action :clean_temp_files
       end
     end
 
